@@ -38,7 +38,7 @@ var computerChoice = alert("L'ennemie a choisi l'arme: " + "\n" + "             
         //console.log(computerChoice);
 
 //Comparaison des choix et affichage du résultat.
-var result = "";
+var result =  " ";
 
     if (playeurChoice === computerChoice) {
         result = "égalité";
@@ -53,3 +53,4 @@ var result = "";
 console.log(result);
 
 //Affichage du résultat dans un pop-up.
+alert(result);
