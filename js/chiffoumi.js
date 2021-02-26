@@ -17,10 +17,11 @@ var choices = [
 ];
 
 
-//Choix du joueur entre les 3 valeures.
+//Choix du joueur entre les 3 valeures et affichage du choix.
 var playeurChoice = prompt("Choisis une de ces trois armes:\nPierre   ou   Feuille   ou   Ciseau");
 
 //Choix de l'ordinateur entre les 3 valeures de façon aléatoire.
+    //https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 var ia = getRandomInt(3);
 
 function getRandomInt(max) {
@@ -30,6 +31,25 @@ function getRandomInt(max) {
 
 console.log(ia);
 
+//Affichage du choix de l'ordinateur.
+
 var computerChoice = alert("L'ennemie a choisi l'arme: " + "\n" + "                 " + choices[ia]);
 
-console.log(computerChoice);
+        //console.log(computerChoice);
+
+//Comparaison des choix et affichage du résultat.
+var result = "";
+
+    if (playeurChoice === computerChoice) {
+        result = "égalité";
+    }
+    else if ( (playeurChoice === "Pierre" && computerChoice === "Ciseau") || (playeurChoice === "Feuille" && computerChoice === "Pierre") || (playeurChoice === "Ciseau" && computerChoice === "Feuille")) {
+        result = "Gagné !";
+    }
+    else {
+        result = "Perdu...";
+    }
+
+console.log(result);
+
+//Affichage du résultat dans un pop-up.
