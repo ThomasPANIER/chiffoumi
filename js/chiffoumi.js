@@ -5,7 +5,7 @@ alert("Bonjour noble guerrier !");
 
 //pop-up fenetre pour entrer le nom, puis pop-up merci + nom entré
 var playerName = prompt("Avant de pouvoir combattre,\n           entre ton nom: ");
-    //var name = prompt();
+         //var name = prompt();
 
 alert("Merci " + playerName + "!");
 
@@ -26,6 +26,10 @@ var ia = getRandomInt(3);
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
-//console.log(getRandomInt(2));
+        //console.log(getRandomInt(2));
 
 console.log(ia);
+
+var computerChoice = choices[ia];
+
+console.log(computerChoice);
