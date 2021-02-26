@@ -30,6 +30,6 @@ function getRandomInt(max) {
 
 console.log(ia);
 
-var computerChoice = choices[ia];
+var computerChoice = alert("L'ennemie a choisi l'arme: " + "\n" + "                 " + choices[ia]);
 
 console.log(computerChoice);
