@@ -19,7 +19,7 @@ var choices = [
 
 //Choix du joueur entre les 3 valeures et affichage du choix.
 var playeurChoice = prompt("Choisis une de ces trois armes:\nPierre   ou   Feuille   ou   Ciseau");
-console.log(playeurChoice.toLowerCase());
+        //console.log(playeurChoice.toLowerCase());
 
 //Choix de l'ordinateur entre les 3 valeures de façon aléatoire.
     //https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/random
@@ -59,7 +59,7 @@ alert (result);
         winner = "Pas de gagnant";
     }
     else if (result === "Gagné !") {
-        winner = (playerName + " a sauver le monde");
+        winner = (playerName + " tu as sauver le monde");
     }
     else if (result === "Perdu...") {
         winner = "L'ennemi a détruit le monde";
