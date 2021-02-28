@@ -4,13 +4,13 @@
 alert("Bonjour noble guerrier !");
 
 //pop-up fenetre pour entrer le nom, puis pop-up merci + nom entré
-var playerName = prompt("Avant de pouvoir combattre,\n           entre ton nom: ");
-         //var name = prompt();
+//Insertion d'une boucle pour vérifier que le joueur entre un nom (do-while) minimum 1 caractère.
+do {var playerName = prompt("Avant de pouvoir combattre,\n           entre ton nom: ");}
+while (playerName === "");
 
 alert("Merci " + playerName + "!");
 
 //Boucle permettant de rejouer la partie (3fois).
-
 for (var round = 0; round < 3; round++) {
 
 //Stokage des valeures pierre, feuille et ciseau.
