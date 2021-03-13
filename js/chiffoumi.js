@@ -42,10 +42,10 @@ for (var round = 0; round < 3; round++) {
 
 //Comparaison des choix et affichage du résultat.
 //var result = "";
-        if (playeurChoice.toLowerCase() === computerChoice) {
+        if (playeurChoice.toLowerCase().trim() === computerChoice) {
             result = "Egalité";
         }
-        else if ((playeurChoice.toLowerCase() === "pierre" && computerChoice === "ciseau") || (playeurChoice.toLowerCase() === "feuille" && computerChoice === "pierre") || (playeurChoice.toLowerCase() === "ciseau" && computerChoice === "feuille")) {
+        else if ((playeurChoice.toLowerCase().trim() === "pierre" && computerChoice === "ciseau") || (playeurChoice.toLowerCase().trim() === "feuille" && computerChoice === "pierre") || (playeurChoice.toLowerCase().trim() === "ciseau" && computerChoice === "feuille")) {
             result = "Gagné !";
         }
         else {
